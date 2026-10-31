@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#081426" name="theme-color"/>
+<meta content="Portofolio Najwa Kamila Salma — Teknik Elektro, Teknik Tenaga Elektrik. Pengalaman pemeliharaan pembangkit, analisis transformator, desain instalasi, dan otomasi." name="description"/>
+<title>Najwa Kamila Salma | Electrical Engineering Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#081426;--bg2:#0d1d33;--panel:#10243d;--panel2:#132b48;--ink:#edf5ff;--muted:#9bb0c9;--blue:#5da9ff;--cyan:#55e0dc;--line:rgba(160,190,220,.16);--white:#fff;--mono:"DM Mono",monospace;--sans:"DM Sans",sans-serif;--display:"Manrope",sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit}
+::selection{background:var(--cyan);color:var(--bg)}
+.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
+.eyebrow{font:500 11px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)}
+.section{padding:100px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:38px}
+h2{font:700 clamp(32px,5vw,48px)/1.12 var(--display);letter-spacing:-.045em;margin-top:12px}
+.section-intro{max-width:440px;color:var(--muted);font-size:15px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(8,20,38,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav-in{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font:800 19px var(--display);letter-spacing:-.06em}.brand span{color:var(--cyan)}
+.nav-links{display:flex;align-items:center;gap:26px;color:#c0cfe0;font-size:13px}
+.nav-links a:hover{color:var(--cyan)}
+.nav-cta{border:1px solid rgba(85,224,220,.45);padding:9px 15px;border-radius:6px;color:var(--cyan)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:8px 11px;border-radius:6px}
+.hero{position:relative;overflow:hidden;padding:90px 0 82px;background:radial-gradient(ellipse at 75% 30%,rgba(36,105,168,.22),transparent 40%),linear-gradient(140deg,#081426 25%,#0b1b30 100%)}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(130,180,220,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(130,180,220,.12) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(90deg,transparent,#000)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:70px}
+.hero h1{font:800 clamp(46px,7.4vw,86px)/.99 var(--display);letter-spacing:-.075em;margin:22px 0}
+.hero h1 span{color:var(--cyan)}
+.hero-lead{font-size:18px;color:#c1d0e1;max-width:620px;line-height:1.75}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 19px;border-radius:6px;font-weight:700;font-size:13px;transition:.2s}
+.btn-primary{background:var(--cyan);color:#061727}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px #55e0dc33}
+.btn-outline{border:1px solid #47617e;color:var(--ink)}.btn-outline:hover{border-color:var(--cyan);color:var(--cyan)}
+.hero-meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:42px;color:var(--muted);font:11px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.hero-meta span:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan);margin:0 9px 1px 0}
+.portrait-wrap{position:relative;max-width:350px;margin-left:auto;width:100%}
+.portrait-frame{position:relative;aspect-ratio:4/5;border:1px solid rgba(85,224,220,.4);border-radius:10px;overflow:hidden;background:linear-gradient(145deg,#142e4b,#071322);box-shadow:22px 22px 0 rgba(85,224,220,.06)}
+.portrait-frame img{width:100%;height:100%;object-fit:contain;object-position:center bottom}
+.portrait-label{position:absolute;bottom:18px;left:18px;right:18px;padding:12px 14px;background:rgba(6,19,34,.8);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:6px}
+.portrait-label strong{display:block;font:700 14px var(--display)}.portrait-label small{color:var(--muted);font:10px var(--mono);letter-spacing:.1em}
+.corner{position:absolute;width:60px;height:60px;border-color:var(--cyan);opacity:.7}.corner.tl{top:-12px;left:-12px;border-top:2px solid;border-left:2px solid}.corner.br{bottom:-12px;right:-12px;border-bottom:2px solid;border-right:2px solid}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:65px}
+.stat{background:var(--bg2);padding:22px 24px}.stat strong{font:800 27px var(--display);display:block;color:var(--white)}.stat span{font-size:12px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}
+.about-note{padding:26px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+.about-note .big{font:700 23px/1.4 var(--display);letter-spacing:-.03em}
+.about-note p{color:var(--muted);font-size:14px;margin-top:16px}
+.about-copy p{color:#bdcbdc;margin-bottom:18px}
+.info-pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}.pill{border:1px solid var(--line);border-radius:4px;padding:7px 11px;color:#c3d4e7;font-size:12px}
+.timeline{display:grid;gap:18px}
+.experience-card,.project-card,.skill-card,.edu-row{background:var(--bg2);border:1px solid var(--line);border-radius:8px}
+.experience-card{padding:30px;display:grid;grid-template-columns:1fr auto;gap:20px}
+.experience-card h3,.project-card h3,.skill-card h3{font:700 20px var(--display);letter-spacing:-.025em}
+.meta{font:11px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--cyan);margin:8px 0 16px}
+.experience-card p,.project-card p{color:var(--muted);font-size:14px}
+.bullets{padding-left:18px;margin-top:14px;color:#c5d3e3;font-size:14px}.bullets li{padding:4px 0}.bullets li::marker{color:var(--cyan)}
+.experience-tag{align-self:start;padding:7px 10px;border:1px solid var(--line);border-radius:4px;color:var(--muted);font:10px var(--mono);white-space:nowrap}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project-card{overflow:hidden;transition:.25s}.project-card:hover{transform:translateY(-4px);border-color:rgba(85,224,220,.5)}
+.project-image{height:240px;position:relative;overflow:hidden;background:#142840}
+.project-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.project-card:hover .project-image img{transform:scale(1.04)}
+.project-image.contain img{object-fit:contain;padding:12px;background:#e8edf4}
+.project-body{padding:25px}
+.project-number{font:11px var(--mono);color:var(--cyan);letter-spacing:.12em;margin-bottom:12px}
+.project-body h3{margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tags span{font:10px var(--mono);color:#a9c0d7;border:1px solid var(--line);padding:5px 8px;border-radius:3px}
+.research{background:linear-gradient(135deg,#102b47,#0b1b30);border:1px solid rgba(85,224,220,.25);border-radius:10px;overflow:hidden}
+.research-top{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;padding:34px}
+.research h3{font:700 26px/1.25 var(--display);letter-spacing:-.04em;margin:12px 0}
+.research p{font-size:14px;color:#b5c7d9}
+.research-image{min-height:230px}.research-image img{width:100%;height:100%;object-fit:cover}
+.research-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line)}
+.metric{background:#0b1d32;padding:22px 26px}.metric strong{display:block;font:800 27px var(--display);color:var(--cyan)}.metric span{font-size:11px;color:var(--muted)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery-item{position:relative;overflow:hidden;border-radius:6px;background:var(--panel);aspect-ratio:1.2}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.gallery-item:hover img{transform:scale(1.06)}
+.gallery-item figcaption{position:absolute;inset:auto 0 0;padding:30px 12px 12px;background:linear-gradient(transparent,rgba(4,14,27,.9));font-size:11px;color:white}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.skill-card{padding:24px}.skill-icon{width:38px;height:38px;border:1px solid rgba(85,224,220,.3);color:var(--cyan);display:grid;place-items:center;border-radius:6px;font:15px var(--mono);margin-bottom:18px}
+.skill-card h3{font-size:16px;margin-bottom:12px}.skill-card p{font-size:13px;color:var(--muted)}
+.edu-list{display:grid;gap:12px}.edu-row{padding:22px 24px;display:grid;grid-template-columns:150px 1fr;gap:20px}
+.edu-date{font:11px var(--mono);color:var(--cyan);padding-top:4px}.edu-row h3{font:700 17px var(--display)}.edu-row p{font-size:13px;color:var(--muted);margin-top:4px}
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cert{background:var(--bg2);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.cert img{width:100%;aspect-ratio:1.45;object-fit:contain;background:#e8edf4;padding:8px}
+.cert p{padding:12px 14px;font-size:12px;color:#c4d4e4}
+.contact{background:radial-gradient(ellipse at 85% 20%,rgba(40,123,164,.2),transparent 40%),#0b1b30;border-top:1px solid var(--line);padding:85px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.contact h2{max-width:550px}.contact p{color:var(--muted);margin-top:18px;max-width:460px}
+.contact-links{display:grid;gap:12px}.contact-link{padding:16px 18px;border:1px solid var(--line);border-radius:6px;display:flex;justify-content:space-between;gap:12px;align-items:center}.contact-link:hover{border-color:var(--cyan)}.contact-link small{display:block;color:var(--muted);font:10px var(--mono);text-transform:uppercase;letter-spacing:.1em}.contact-link strong{font-size:14px;font-weight:600;overflow-wrap:anywhere}.arrow{color:var(--cyan)}
+footer{padding:22px 0;color:#7188a2;font:10px var(--mono);letter-spacing:.08em}
+.footer-in{display:flex;justify-content:space-between;gap:16px}
+@media(max-width:800px){.nav-links{gap:14px}.nav-links a:not(.nav-cta){display:none}.menu-btn{display:block}.nav-links.open{position:absolute;top:75px;left:0;right:0;background:#0b1b30;padding:20px 24px;display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}.nav-links.open a{display:block}.hero-grid,.about-grid,.research-top,.contact-grid{grid-template-columns:1fr}.hero-grid{gap:45px}.portrait-wrap{margin:0 auto;max-width:290px;grid-row:1}.hero{padding-top:60px}.stats{margin-top:42px}.about-grid{gap:25px}.research-image{min-height:180px}.gallery-grid{grid-template-columns:repeat(2,1fr)}.skills-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.wrap{width:min(100% - 34px,1120px)}.section{padding:70px 0}.section-head{display:block}.section-intro{margin-top:14px}.hero h1{font-size:49px}.hero-lead{font-size:16px}.hero-meta{gap:12px;display:grid}.stats{grid-template-columns:1fr}.stat{padding:15px 18px}.project-grid,.skills-grid,.certs{grid-template-columns:1fr}.project-image{height:210px}.experience-card{grid-template-columns:1fr;padding:22px}.experience-tag{justify-self:start}.edu-row{grid-template-columns:1fr;gap:6px}.research-top{padding:23px}.research-metrics{grid-template-columns:1fr}.metric{padding:16px 22px}.gallery-grid{gap:8px}.contact{padding:70px 0}.footer-in{display:block}.footer-in span{display:block;margin-top:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+<div class="wrap nav-in">
+<a class="brand" href="#home">NKS<span>.</span></a>
+<button aria-expanded="false" aria-label="Buka navigasi" class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')!=='true')">MENU</button>
+<nav aria-label="Navigasi utama" class="nav-links">
+<a href="#about">Tentang</a><a href="#experience">Pengalaman</a><a href="#research">Penelitian</a><a href="#projects">Proyek</a><a href="#skills">Keahlian</a><a href="#education">Pendidikan</a><a class="nav-cta" href="#contact">Hubungi saya ↗</a>
+</nav>
+</div>
+</header>
+<main id="home">
+<section class="hero">
+<div class="wrap">
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Electrical Engineering · Portfolio 2026</div>
+<h1>Najwa Kamila<br/><span>Salma.</span></h1>
+<p class="hero-lead">Lulusan Teknik Elektro, konsentrasi Teknik Tenaga Elektrik. Tertarik pada sistem tenaga, pemeliharaan peralatan listrik, serta analisis kondisi dan keandalan peralatan di lingkungan pembangkitan maupun industri.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#projects">Jelajahi proyek <span>↘</span></a><a class="btn btn-outline" href="#contact">Mari terhubung ↗</a></div>
+<div class="hero-meta"><span>Universitas Pendidikan Indonesia</span><span>IPK 3,70 / 4,00 · Cum Laude</span><span>Electrical Maintenance Intern · PLTA Saguling</span></div>
+</div>
+<div class="portrait-wrap"><div class="corner tl"></div><div class="portrait-frame"><img alt="Foto Najwa Kamila Salma" src="assets/najwa-portrait.jpg"/><div class="portrait-label"><strong>Najwa Kamila Salma</strong><small>ELECTRICAL ENGINEERING GRADUATE</small></div></div><div class="corner br"></div></div>
+</div>
+<div class="stats">
+<div class="stat"><strong>3,70</strong><span>IPK · Cum Laude</span></div>
+<div class="stat"><strong>700 MW</strong><span>Kapasitas PLTA Saguling</span></div>
+<div class="stat"><strong>4+</strong><span>Proyek teknis dan penelitian</span></div>
+</div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">01 / Profile</div><h2>Tentang saya</h2></div><p class="section-intro">Latar belakang teknik tenaga listrik dengan perpaduan pengalaman praktik, pengukuran, dan analisis teknis.</p></div>
+<div class="about-grid">
+<div class="about-note"><div class="eyebrow">A practical mindset</div><div class="big">Memahami kondisi peralatan dari data, pengukuran, dan proses kerja di lapangan.</div><p>Saya menikmati proses menghubungkan teori kelistrikan dengan kondisi aktual peralatan dan kebutuhan operasional.</p></div>
+<div class="about-copy">
+<p>Saya merupakan lulusan S1 Teknik Elektro Universitas Pendidikan Indonesia, konsentrasi Teknik Tenaga Elektrik, dengan IPK 3,70/4,00 dan predikat Cum Laude. Selama perkuliahan, saya mengembangkan pemahaman di bidang sistem tenaga, instalasi listrik, mesin listrik, proteksi, dan otomasi industri.</p>
+<p>Pengalaman magang di Divisi Pemeliharaan Listrik PT PLN Indonesia Power UBP Saguling memberi saya kesempatan untuk mengenal proses pemeliharaan peralatan pembangkit secara langsung. Saya terlibat dalam pengukuran parameter listrik dan operasional, pemantauan kondisi peralatan, serta analisis data transformator utama dan Main Water Supply Pump.</p>
+<p>Melalui penelitian dan proyek akademik, saya juga terbiasa menggunakan perangkat lunak teknik untuk mengolah data, melakukan simulasi, dan menyusun dokumentasi teknis. Saya terbuka untuk kesempatan di bidang electrical engineering, maintenance, reliability, power system, maupun engineering industri.</p>
+<div class="info-pills"><span class="pill">Power System</span><span class="pill">Electrical Maintenance</span><span class="pill">Condition Monitoring</span><span class="pill">Industrial Automation</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="experience">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">02 / Experience</div><h2>Pengalaman profesional</h2></div><p class="section-intro">Pengalaman praktik di lingkungan pembangkit listrik tenaga air dan divisi pemeliharaan kelistrikan.</p></div>
+<div class="timeline">
+<article class="experience-card">
+<div><h3>Electrical Maintenance Intern</h3><div class="meta">PT PLN Indonesia Power · UBP Saguling · Juni–Agustus 2025</div>
+<p>Berada di Divisi Pemeliharaan Listrik pada lingkungan PLTA dengan kapasitas terpasang 700 MW (4 × 175 MW).</p>
+<ul class="bullets">
+<li>Melakukan pengukuran parameter listrik dan operasional, termasuk tegangan, arus, resistansi, temperatur, serta getaran pada kegiatan pemeliharaan peralatan.</li>
+<li>Mendukung analisis data operasional Main Transformer (MTR) dan Main Water Supply Pump (MWSP) sebagai bahan evaluasi kondisi peralatan.</li>
+<li>Mendapatkan paparan praktik pada kegiatan preventive maintenance peralatan pembangkit, antara lain transformator, generator, sistem pompa, dan Gas Circuit Breaker (GCB).</li>
+<li>Mengikuti kegiatan pengujian dan pemeliharaan peralatan proteksi serta GCB, termasuk pengenalan pengisian SF₆ dan pengujian simultaneitas.</li>
+<li>Menyusun dan mempresentasikan hasil analisis data operasional kepada tim pemeliharaan untuk mendukung evaluasi peralatan dan perencanaan tindakan preventif.</li>
+</ul>
+</div><div class="experience-tag">ON-SITE EXPERIENCE</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="research">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">03 / Undergraduate research</div><h2>Penelitian tugas akhir</h2></div><p class="section-intro">Analisis respons termal dan estimasi penuaan transformator berdasarkan variasi pembebanan dan suhu lingkungan.</p></div>
+<article class="research">
+<div class="research-top">
+<div><div class="eyebrow">Transformer · 500 kV · 412 MVA · OFAF</div>
+<h3>Analisis Prakiraan Susut Umur Transformator Menggunakan Metode Montsinger Berdasarkan Respon Termal Akibat Variasi Pembebanan dan Suhu Lingkungan</h3>
+<p>Studi pada Main Transformer PLTA Saguling dengan data operasional Januari–Juni 2025. Penelitian memodelkan suhu hotspot dan laju penuaan relatif dengan mempertimbangkan beban serta suhu lingkungan, menggunakan metode Montsinger dan regresi linier berganda.</p>
+<div class="tags"><span>MATLAB</span><span>Microsoft Excel</span><span>Montsinger</span><span>IEC 60076</span><span>Multiple Linear Regression</span></div>
+</div>
+<div class="research-image"><img alt="Dokumentasi peralatan transformator saat kegiatan pemeliharaan" src="assets/transformer-maintenance.jpg"/></div>
+</div>
+<div class="research-metrics">
+<div class="metric"><strong>63–64°C</strong><span>Rata-rata suhu hotspot hasil analisis</span></div>
+<div class="metric"><strong>0,379</strong><span>Nilai FAA maksimum pada periode pengamatan</span></div>
+<div class="metric"><strong>±19,3 tahun</strong><span>Estimasi sisa umur termal berdasarkan basis perhitungan 20 tahun</span></div>
+</div>
+</article>
+<p style="color:var(--muted);font-size:12px;margin-top:14px">Catatan: estimasi sisa umur merupakan hasil perhitungan berdasarkan kondisi dan periode data penelitian, bukan pengukuran langsung umur aktual transformator.</p>
+</div>
+</section>
+<section class="section" id="projects">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">04 / Selected work</div><h2>Proyek teknis</h2></div><p class="section-intro">Beberapa pekerjaan akademik yang menunjukkan penerapan perhitungan, desain, pengujian, dan otomasi kelistrikan.</p></div>
+<div class="project-grid">
+<article class="project-card">
+<div class="project-image contain"><img alt="Gambar perencanaan instalasi listrik gedung FPSD lantai 5" src="assets/electrical-floor-plan.jpg"/></div>
+<div class="project-body"><div class="project-number">PROJECT 01 / ELECTRICAL DESIGN</div><h3>Desain instalasi listrik Gedung FPSD lantai 5</h3><p>Merancang distribusi daya dan penerangan gedung, mulai dari jalur kabel, panel, proteksi, hingga dokumentasi gambar teknik.</p><ul class="bullets"><li>Menghitung kebutuhan daya pencahayaan, AC, dan stop kontak berdasarkan PUIL 2020.</li><li>Mengelompokkan beban dan menyeimbangkan sistem tiga fasa.</li><li>Menentukan kapasitas kabel dan kapasitor bank serta menghitung resistansi grounding.</li><li>Menyusun denah instalasi dan single line diagram tiap panel.</li></ul><div class="tags"><span>AutoCAD</span><span>Microsoft Excel</span><span>PUIL 2020</span></div></div>
+</article>
+<article class="project-card">
+<div class="project-image"><img alt="Dokumentasi pemasangan sistem sensor hemat energi" src="assets/sensor-installation.jpg"/></div>
+<div class="project-body"><div class="project-number">PROJECT 02 / ENERGY EFFICIENCY</div><h3>Instalasi sensor hemat energi Gedung FPTI UPI</h3><p>Merancang dan mengimplementasikan otomatisasi penerangan berdasarkan keberadaan orang untuk mengurangi waktu lampu menyala saat ruangan tidak digunakan.</p><ul class="bullets"><li>Merancang jalur listrik dan distribusi penerangan setiap ruang.</li><li>Memasang relay dan sensor gerak serta mengatur sensitivitas dan waktu respons.</li><li>Mengintegrasikan sensor dengan sistem penerangan otomatis.</li></ul><div class="tags"><span>Motion Sensor</span><span>Relay</span><span>Electrical Installation</span></div></div>
+</article>
+<article class="project-card">
+<div class="project-image"><img alt="Panel kontrol untuk proyek PLC motor induksi tiga fasa" src="assets/plc-control-panel.jpg"/></div>
+<div class="project-body"><div class="project-number">PROJECT 03 / INDUSTRIAL AUTOMATION</div><h3>Kontrol motor induksi 3 fasa menggunakan PLC Omron CP1H</h3><p>Mengembangkan logika kendali motor dengan metode Star-Delta dan Forward-Reverse melalui pemrograman ladder diagram.</p><ul class="bullets"><li>Membuat dan menyimulasikan program di CX-Programmer.</li><li>Merancang panel kontrol, konfigurasi I/O, dan koneksi PLC.</li><li>Melakukan transfer program dan pengujian operasional motor.</li></ul><div class="tags"><span>Omron CP1H</span><span>CX-Programmer</span><span>Ladder Diagram</span></div></div>
+</article>
+
+</div>
+</div>
+</section>
+<section class="section" id="gallery">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">05 / Field notes</div><h2>Dokumentasi kegiatan</h2></div><p class="section-intro">Cuplikan dokumentasi praktik, pengukuran, instalasi, dan kegiatan organisasi dari portofolio.</p></div>
+<div class="gallery-grid">
+<figure class="gallery-item"><img alt="Pengukuran peralatan listrik" src="assets/electrical-measurement.jpg"/><figcaption>Pengukuran peralatan listrik</figcaption></figure>
+<figure class="gallery-item"><img alt="Penggunaan alat ukur listrik" src="assets/electrical-measurement-detail.jpg"/><figcaption>Penggunaan alat ukur</figcaption></figure>
+<figure class="gallery-item"><img alt="Kegiatan pemeliharaan peralatan" src="assets/transformer-maintenance.jpg"/><figcaption>Lingkungan pemeliharaan</figcaption></figure>
+<figure class="gallery-item"><img alt="Dokumentasi tim magang" src="assets/saguling-internship-team.jpg"/><figcaption>Dokumentasi magang</figcaption></figure>
+<figure class="gallery-item"><img alt="Sensor gerak untuk sistem penerangan" src="assets/motion-sensor.jpg"/><figcaption>Komponen sensor gerak</figcaption></figure>
+<figure class="gallery-item"><img alt="Modul rangkaian sensor" src="assets/sensor-module.jpg"/><figcaption>Modul rangkaian sensor</figcaption></figure>
+<figure class="gallery-item"><img alt="Pemasangan instalasi penerangan" src="assets/lighting-installation.jpg"/><figcaption>Instalasi penerangan</figcaption></figure>
+<figure class="gallery-item"><img alt="Diagram ladder PLC" src="assets/plc-ladder-diagram.jpg"/><figcaption>Program ladder PLC</figcaption></figure>
+</div>
+</div>
+</section>
+<section class="section" id="skills">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">06 / Capabilities</div><h2>Keahlian teknis</h2></div><p class="section-intro">Perangkat dan bidang teknis yang pernah digunakan atau dipelajari dalam proyek, praktikum, dan pengalaman magang.</p></div>
+<div class="skills-grid">
+<article class="skill-card"><div class="skill-icon">01</div><h3>Power system &amp; analysis</h3><p>Analisis sistem tenaga, analisis termal transformator, pengolahan data operasional, dan dasar evaluasi kondisi peralatan.</p><div class="tags"><span>ETAP</span><span>MATLAB</span><span>Excel</span></div></article>
+<article class="skill-card"><div class="skill-icon">02</div><h3>Electrical design</h3><p>Perencanaan instalasi listrik, distribusi daya, single line diagram, pencahayaan, dan dokumentasi gambar teknik.</p><div class="tags"><span>AutoCAD</span><span>PUIL 2020</span></div></article>
+<article class="skill-card"><div class="skill-icon">03</div><h3>Maintenance &amp; measurement</h3><p>Paparan preventive maintenance, pengukuran parameter listrik, temperatur, resistansi, dan getaran peralatan.</p><div class="tags"><span>Fluke 279 FC</span><span>Fluke 376</span><span>Vibration</span></div></article>
+<article class="skill-card"><div class="skill-icon">04</div><h3>Industrial automation</h3><p>Dasar pemrograman PLC, penyusunan ladder diagram, serta kontrol motor induksi tiga fasa.</p><div class="tags"><span>Omron CP1H</span><span>CX-Programmer</span></div></article>
+<article class="skill-card"><div class="skill-icon">05</div><h3>Electrical testing</h3><p>Pemahaman proses pengujian meter energi listrik dan pengenalan pengujian peralatan proteksi.</p><div class="tags"><span>kWh Meter</span><span>Relay Protection</span></div></article>
+<article class="skill-card"><div class="skill-icon">06</div><h3>Technical documentation</h3><p>Pengolahan data, penyusunan laporan teknis, dokumentasi pekerjaan, dan penyampaian hasil analisis.</p><div class="tags"><span>Microsoft Office</span><span>Reporting</span></div></article>
+</div>
+</div>
+</section>
+<section class="section" id="education">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">07 / Education</div><h2>Pendidikan</h2></div><p class="section-intro">Fondasi akademik di bidang teknik elektro dan elektronika industri.</p></div>
+<div class="edu-list">
+<article class="edu-row"><div class="edu-date">2022 — 2026</div><div><h3>Universitas Pendidikan Indonesia</h3><p>S1 Teknik Elektro · Konsentrasi Teknik Tenaga Elektrik · Fakultas Pendidikan Teknik dan Industri</p><p><strong style="color:var(--cyan)">IPK 3,70/4,00 · Cum Laude</strong></p></div></article>
+<article class="edu-row"><div class="edu-date">2019 — 2022</div><div><h3>SMK Negeri 1 Cimahi</h3><p>Teknik Elektronika Industri · Nilai akhir 86,73/100</p></div></article>
+</div>
+</div>
+</section>
+<section class="section" id="organization">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">08 / Organization</div><h2>Pengalaman organisasi</h2></div><p class="section-intro">Pengalaman koordinasi, administrasi, dan pengelolaan data dalam organisasi kemahasiswaan.</p></div>
+<div class="timeline">
+<article class="experience-card"><div><h3>Sekretaris Bidang · Himpunan Mahasiswa Elektro UPI</h3><div class="meta">Agustus 2023 — Mei 2024</div><ul class="bullets"><li>Mengelola administrasi dan pengarsipan surat masuk maupun surat keluar.</li><li>Memeriksa dan merevisi surat kegiatan untuk menjaga kesesuaian format serta ketepatan informasi.</li><li>Menyusun notulen rapat sebagai dokumentasi pembahasan dan acuan tindak lanjut antarbidang.</li></ul></div><div class="experience-tag">SECRETARIAT</div></article>
+<article class="experience-card"><div><h3>Staf Penelitian dan Pengembangan · Bidang PSDO</h3><div class="meta">Himpunan Mahasiswa Elektro UPI</div><ul class="bullets"><li>Memantau partisipasi anggota dalam kegiatan organisasi.</li><li>Mengumpulkan dan menganalisis data keterlibatan anggota sebagai bahan evaluasi dan perencanaan program.</li></ul></div><div class="experience-tag">DATA &amp; DEVELOPMENT</div></article>
+</div>
+</div>
+</section>
+<section class="section" id="certificates">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">09 / Learning</div><h2>Sertifikat &amp; pelatihan</h2></div><p class="section-intro">Pelatihan dan pembelajaran tambahan untuk memperkuat pemahaman sistem tenaga dan praktik kelistrikan.</p></div>
+<div class="certs">
+<article class="cert"><img alt="Sertifikat pelatihan pengujian meter kWh" src="assets/certificate-kwh-meter.jpg"/><p>Pelatihan Pengujian Meter kWh Statis · BPSDMP Kemendag RI · 2025</p></article>
+<article class="cert"><img alt="Sertifikat pelatihan ETAP" src="assets/certificate-etap-1.jpg"/><p>Pelatihan ETAP · Electrical Power System Analysis</p></article>
+<article class="cert"><img alt="Sertifikat pelatihan ETAP" src="assets/certificate-etap-2.jpg"/><p>Pelatihan ETAP Software · FPTI UPI</p></article>
+<article class="cert"><img alt="Sertifikat Electric Power Systems" src="assets/certificate-power-systems.jpg"/><p>Electric Power Systems · University at Buffalo · Coursera</p></article>
+<article class="cert"><img alt="Sertifikat Electric Utilities" src="assets/certificate-electric-utilities.jpg"/><p>Electric Utilities Fundamentals and Future · University of Colorado · Coursera</p></article>
+<article class="cert"><img alt="Sertifikat praktik kerja lapangan" src="assets/certificate-internship.jpg"/><p>Praktik Kerja Lapangan · PLN Indonesia Power UBP Saguling · 2025</p></article>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="wrap contact-grid">
+<div><div class="eyebrow">10 / Get in touch</div><h2>Let’s connect and build something meaningful.</h2><p>Saya terbuka untuk berdiskusi mengenai peluang di bidang teknik elektro, sistem tenaga, pemeliharaan, dan engineering industri.</p></div>
+<div class="contact-links">
+<a class="contact-link" href="mailto:najwa.kamila.salmaa@gmail.com"><span><small>Email</small><strong>najwa.kamila.salmaa@gmail.com</strong></span><span class="arrow">↗</span></a>
+<a class="contact-link" href="https://www.linkedin.com/in/najwa-kamila-salma" rel="noopener" target="_blank"><span><small>LinkedIn</small><strong>linkedin.com/in/najwa-kamila-salma</strong></span><span class="arrow">↗</span></a>
+<a class="contact-link" href="https://www.instagram.com/najwakamilaas" rel="noopener" target="_blank"><span><small>Instagram</small><strong>@najwakamilaas</strong></span><span class="arrow">↗</span></a>
+</div>
+</div>
+</section>
+</main>
+<footer><div class="wrap footer-in"><span>© 2026 NAJWA KAMILA SALMA</span><span>DESIGNED WITH PURPOSE · ELECTRICAL ENGINEERING PORTFOLIO</span></div></footer>
+<script>
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.nav-links').classList.remove('open');document.querySelector('.menu-btn').setAttribute('aria-expanded','false')}));
+</script>
+</body>
+</html>
